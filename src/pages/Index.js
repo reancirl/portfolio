@@ -2,10 +2,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import MailchimpForm from '../components/MailChimpForm';
 
 const meta = {
   title: 'Reancirl Balaba Dev Services',
-  meta: ['Development','Productize services'],
+  meta: [],
   link: [],
   style: [],
   script: [],
@@ -1175,21 +1176,13 @@ export default function Index() {
               <div className='px-4'>
                 <div className='flex flex-wrap md:max-w-xl mx-auto -m-2'>
                   <div className='w-full md:flex-1 p-2'>
-                    <div className='md:max-w-xl mx-auto border border-gray-900 focus-within:border-white overflow-hidden rounded-3xl'>
-                      <input
-                        className='px-6 py-4 text-gray-300 w-full placeholder-gray-300 outline-none bg-transparent'
-                        type='text'
-                        placeholder='E-mail'
+                    <div className=''>
+                      <MailchimpForm 
+                          inputStyle="px-6 py-4 text-gray-300 placeholder-gray-300 outline-none bg-transparent mx-auto border border-gray-900 focus-within:border-white overflow-hidden rounded-3xl"
+                          buttonStyle="px-14 py-4 font-medium tracking-2xl border-2 border-green-400 bg-green-400 hover:bg-green-500 text-black focus:ring-4 focus:ring-green-500 focus:ring-opacity-40 rounded-full transition duration-300"
+                          placeholder="Email"
                       />
                     </div>
-                  </div>
-                  <div className='w-full md:w-auto p-2'>
-                    <a
-                      className='inline-block px-14 py-4 font-medium tracking-2xl border-2 border-green-400 bg-green-400 hover:bg-green-500 text-black focus:ring-4 focus:ring-green-500 focus:ring-opacity-40 rounded-full transition duration-300'
-                      href='#'
-                    >
-                      Subscribe
-                    </a>
                   </div>
                 </div>
               </div>
@@ -1205,7 +1198,7 @@ export default function Index() {
                   <h3 className='mb-10 text-3xl text-white'>
                     Subscribe to get tips and tactics to grow the way you want.
                   </h3>
-                  <div className='relative border border-gray-900 focus-within:border-white overflow-hidden rounded-3xl'>
+                  {/* <div className='relative border border-gray-900 focus-within:border-white overflow-hidden rounded-3xl'>
                     <input
                       className='block w-full py-5 pl-8 pr-24 text-lg text-gray-300 placeholder-gray-400 bg-transparent'
                       type='text'
@@ -1233,7 +1226,7 @@ export default function Index() {
                         />
                       </svg>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className='w-full md:w-1/2 p-8'>
