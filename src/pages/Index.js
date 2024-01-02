@@ -40,13 +40,16 @@ export default function Index() {
                         <a href='#'>Home</a>
                       </li>
                       <li className='mr-12 text-white font-medium hover:text-opacity-90 tracking-tighter'>
-                        <a href='#'>About</a>
+                        <a href='#about'>About</a>
                       </li>
                       <li className='mr-12 text-white font-medium hover:text-opacity-90 tracking-tighter'>
-                        <a href='#'>Feature</a>
+                        <a href='#team'>Team</a>
+                      </li>
+                      <li className='mr-12 text-white font-medium hover:text-opacity-90 tracking-tighter'>
+                        <a href='#blog'>Blog</a>
                       </li>
                       <li className='text-white font-medium hover:text-opacity-90 tracking-tighter'>
-                        <a href='#'>Blog</a>
+                        <a href='#subscribe'>Community</a>
                       </li>
                     </ul>
                   </div>
@@ -54,9 +57,9 @@ export default function Index() {
                     <div className='inline-block'>
                       <a
                         className='inline-block px-8 py-4 text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300'
-                        href='https://calendly.com/reancirl/dev-services'
+                        href='https://calendly.com/reancirl/dev-services' target='_blank'
                       >
-                        Get in touch
+                        Book a call
                       </a>
                     </div>
                   </div>
@@ -132,22 +135,25 @@ export default function Index() {
                       <a href='#'>Home</a>
                     </li>
                     <li className='mb-8 text-white font-medium hover:text-opacity-90 tracking-tighter'>
-                      <a href='#'>About</a>
+                      <a href='#about'>About</a>
                     </li>
                     <li className='mb-8 text-white font-medium hover:text-opacity-90 tracking-tighter'>
-                      <a href='#'>Feature</a>
+                      <a href='#team'>Team</a>
                     </li>
                     <li className='text-white font-medium hover:text-opacity-90 tracking-tighter'>
-                      <a href='#'>Blog</a>
+                      <a href='#blog'>Blog</a>
+                    </li>
+                    <li className='text-white font-medium hover:text-opacity-90 tracking-tighter'>
+                      <a href='#subscribe'>Community</a>
                     </li>
                   </ul>
                 </div>
                 <div className='flex flex-col justify-end w-full pb-8'>
                   <a
                     className='inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300'
-                    href='#'
+                    href='https://calendly.com/reancirl/dev-services' target='_blank'
                   >
-                    Get in touch
+                    Book a Call
                   </a>
                 </div>
               </div>
@@ -192,23 +198,18 @@ export default function Index() {
             </div>
           </div>
           <img
-            className='absolute top-0 left-48'
-            src='nightsable-assets/images/headers/layer-blur.svg'
-            alt=''
-          />
-          <img
             className='absolute bottom-0 right-0'
             src='nightsable-assets/images/headers/lines2.svg'
             alt=''
           />
         </section>
-        <section className='pt-20 pb-24 md:pb-28 overflow-hidden'>
+        <section className='pt-20 pb-24 md:pb-28 overflow-hidden' id='about'>
           <div className='container px-4 mx-auto'>
             <div className='flex flex-wrap -m-8'>
               <div className='w-full md:w-1/2 p-8'>
                 <div className='md:max-w-md'>
                   <span className='inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter'>
-                    Check our stats
+                    About
                   </span>
                   <h1 className='text-6xl md:text-7xl text-white tracking-tighter-xl'>
                     We focus on our expertise
@@ -217,64 +218,53 @@ export default function Index() {
               </div>
               <div className='w-full md:w-1/2 p-8'>
                 <h3 className='mb-8 text-2xl text-white tracking-tighter'>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
+                  Reancirl, a seasoned Software Engineer, brings a wealth of knowledge and experience accumulated over four years in the tech industry
                 </h3>
                 <p className='mb-10 text-lg text-gray-300'>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
+                What truly sets Reancirl apart is his ability to translate his technical skills into tangible results that align with organizational goals. 
+                He understands that at the core of every successful project is the ability to move the ball forward, making significant progress towards achieving key objectives. 
+                His work ethic, combined with his technical prowess and strategic thinking, makes him an invaluable asset to any team. 
+                By bringing Reancirl on board, your company will not only gain a skilled engineer but also a visionary thinker who can contribute significantly to your organization's success and growth.
                 </p>
                 <a
                   className='inline-block px-8 py-4 text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300'
-                  href='#'
+                  href='https://www.linkedin.com/in/reancirl-balaba/' target='_blank'
                 >
-                  Read more
+                  View LinkedIn Profile
                 </a>
               </div>
             </div>
           </div>
         </section>
-        <section className='relative py-24 overflow-hidden'>
+        <section className='relative py-24 overflow-hidden' id='team'>
           <div className='container px-4 mx-auto'>
-            <div className='mb-20 md:max-w-xl text-center mx-auto'>
+            <div className='mb-10 md:max-w-xl text-center mx-auto'>
               <span className='inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter'>
                 Revolutionizing Development
               </span>
               <h2 className='text-7xl lg:text-8xl text-white tracking-tighter-xl'>
-                Features
+                The Team
               </h2>
             </div>
             <div className='relative mb-10 py-20 px-16 bg-gradient-radial-dark overflow-hidden border border-gray-900 border-opacity-30 rounded-5xl'>
               <div className='max-w-6xl mx-auto'>
                 <div className='relative z-10 flex flex-wrap items-center -m-8'>
-                  <div className='w-full md:w-1/2 p-8'>
-                    <div className='max-w-md mx-auto text-center'>
-                      <h2 className='mb-6 text-7xl text-white tracking-tighter-xl'>
-                        We focus on our expertise
+                  <div className='w-full p-8'>
+                    <div className='max-w-lg mx-auto text-center'>
+                      <h2 className='mb-6 text-5xl text-white'>
+                        Dynamic Team of Over 10+ Technical Experts
                       </h2>
-                      <p className='text-white text-opacity-60'>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum i
+                      <p className='text-white text-opacity-60 mb-10'>
+                      Throughout his career, Reancirl has established strong collaborations with a diverse group of talented developers. Building on this rich network, 
+                      he has assembled a dynamic team proficient in managing a broad spectrum of projects, from smaller-scale freelance tasks to larger, project-based initiatives.
                       </p>
+                      <a
+                        className='inline-block px-8 py-4 text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300'
+                        href='#' target='_blank'
+                      >
+                        View Team Members
+                      </a>
                     </div>
-                  </div>
-                  <div className='w-full md:w-1/2 p-8'>
-                    <img
-                      className='mx-auto md:mr-0'
-                      src='nightsable-assets/images/features/dashboard.png'
-                      alt=''
-                    />
                   </div>
                 </div>
               </div>
@@ -285,21 +275,66 @@ export default function Index() {
               />
             </div>
             <div className='flex flex-wrap -m-5'>
-              <div className='w-full md:w-1/2 p-5'>
+            <div className='w-full md:w-1/2 p-5'>
                 <div className='relative px-16 pt-14 pb-16 h-full bg-gradient-radial-dark overflow-hidden border border-gray-900 border-opacity-30 rounded-5xl'>
-                  <img
-                    className='mb-14'
-                    src='nightsable-assets/images/features/cards.png'
-                    alt=''
-                  />
+                  <div className='mb-14 max-w-sm mx-auto'>
+                    <div className='flex flex-wrap justify-center'>
+                      <div className='w-auto p-2'>
+                        <div className='flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl'>
+                          <img
+                            src='nightsable-assets/logos/brands/jquery-1.svg'
+                            alt=''
+                          />
+                        </div>
+                      </div>
+                      <div className='w-auto p-2'>
+                        <div className='flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl'>
+                          <img
+                            src='nightsable-assets/logos/brands/laravel-2.svg'
+                            alt=''
+                          />
+                        </div>
+                      </div>
+                      <div className='w-auto p-2'>
+                        <div className='flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl'>
+                          <img
+                            src='nightsable-assets/logos/brands/php-1.svg'
+                            alt=''
+                          />
+                        </div>
+                      </div>
+                      <div className='w-auto p-2'>
+                        <div className='flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl'>
+                          <img
+                            src='nightsable-assets/logos/brands/react-2.svg'
+                            alt=''
+                          />
+                        </div>
+                      </div>
+                      <div className='w-auto p-2'>
+                        <div className='flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl'>
+                          <img
+                            src='nightsable-assets/logos/brands/next-js.svg'
+                            alt=''
+                          />
+                        </div>
+                      </div>
+                      <div className='w-auto p-2'>
+                        <div className='flex items-center justify-center w-24 h-24 bg-gradient-radial-dark border border-gray-900 border-opacity-30 rounded-5xl'>
+                          <img
+                            src='nightsable-assets/logos/brands/vue-9.svg'
+                            alt=''
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div className='relative z-10 max-w-sm text-center mx-auto'>
                     <h2 className='mb-6 text-7xl text-white tracking-tighter'>
-                      We focus on our expertise
+                      Technology Stack
                     </h2>
                     <p className='text-white text-opacity-60'>
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum i
+                      We only focus on this tech to provide the best quality output!
                     </p>
                   </div>
                   <img
@@ -365,12 +400,10 @@ export default function Index() {
                   </div>
                   <div className='relative z-10 max-w-sm text-center mx-auto'>
                     <h2 className='mb-6 text-7xl text-white tracking-tighter'>
-                      We focus on our expertise
+                      Industry Experience
                     </h2>
                     <p className='text-white text-opacity-60'>
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum i
+                      Over the years we have worked from startups all the way to fortune 500 companies
                     </p>
                   </div>
                   <img
@@ -387,32 +420,30 @@ export default function Index() {
           <div className='container px-4 mx-auto'>
             <div className='mb-20 md:max-w-2xl text-center mx-auto'>
               <span className='inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter'>
-                Revolutionizing Development
+                3 spots remaining
               </span>
               <h2 className='mb-8 text-7xl lg:text-8xl text-white tracking-7xl lg:tracking-8xl'>
-                Compare our plans
+                Membership Levels
               </h2>
               <p className='mb-12 text-gray-300 max-w-sm mx-auto'>
-                Nightsable is a strategic branding agency focused on brand
-                creation, rebrands, and brand
+                Choose a plan that's right for you. Absolutely no hidden fees, or penalties
               </p>
             </div>
             <div className='flex flex-wrap -m-4'>
               <div className='w-full md:w-1/2 lg:w-1/3 p-4'>
                 <div className='relative px-8 pt-12 pb-12 h-full bg-gradient-radial-dark border-2 border-gray-900 border-opacity-30 overflow-hidden rounded-5xl'>
-                  <p className='mb-2 text-lg text-white font-light'>Basic</p>
+                  <p className='mb-2 text-lg text-white font-light'>Standard</p>
                   <p className='mb-6 text-gray-300'>
-                    During this phase the design is developed to meet the
-                    required technical standards to
+                    One request at a time. Pause or cancel anytime.
                   </p>
                   <p className='mb-4 text-white font-medium text-5xl'>
-                    <span>$800</span>
+                    <span>$899</span>
                     <span className='text-base font-medium text-gray-300'>
                       / month
                     </span>
                   </p>
                   <p className='mb-6 text-xs text-gray-300 font-light uppercase'>
-                    What's includes
+                    Features
                   </p>
                   <ul className='mb-10'>
                     <li className='flex items-center mb-4'>
@@ -422,7 +453,7 @@ export default function Index() {
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>Core engagement survey</p>
+                      <p className='text-white'>1 Senior Developer</p>
                     </li>
                     <li className='flex items-center mb-4'>
                       <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
@@ -431,7 +462,25 @@ export default function Index() {
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>Topic-based assessments</p>
+                      <p className='text-white'>PHP Laravel and WP Elementor Development</p>
+                    </li>
+                    <li className='flex items-center mb-4'>
+                      <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
+                        <img
+                          src='nightsable-assets/images/modals/check.svg'
+                          alt=''
+                        />
+                      </div>
+                      <p className='text-white'>React/Next - Vue/Nuxt Development</p>
+                    </li>
+                    <li className='flex items-center mb-4'>
+                      <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
+                        <img
+                          src='nightsable-assets/images/modals/check.svg'
+                          alt=''
+                        />
+                      </div>
+                      <p className='text-white'>Average 48 hour delivery for a new FEATURE</p>
                     </li>
                     <li className='flex items-center mb-4'>
                       <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
@@ -441,18 +490,18 @@ export default function Index() {
                         />
                       </div>
                       <p className='text-white'>
-                        Custom topic-based assessments
+                        Average 24 hour delivery for a BUG FIX
                       </p>
                     </li>
                     <li className='flex items-center'>
                       <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
-                        <img
+                      <img
                           src='nightsable-assets/images/modals/check.svg'
                           alt=''
                         />
                       </div>
                       <p className='text-white'>
-                        Filterable heatmap &amp; analytics
+                        A week, for website built on top of WP Elementor
                       </p>
                     </li>
                   </ul>
@@ -472,20 +521,19 @@ export default function Index() {
               <div className='w-full md:w-1/2 lg:w-1/3 p-4'>
                 <div className='relative px-8 pt-12 pb-12 h-full bg-gradient-radial-dark border-2 border-gray-900 border-opacity-30 overflow-hidden rounded-5xl'>
                   <p className='mb-2 text-lg text-white font-light'>
-                    Business plan
+                    Pro
                   </p>
                   <p className='mb-6 text-gray-300'>
-                    During this phase the design is developed to meet the
-                    required technical standards to
+                    Double the requests. Pause or cancel anytime
                   </p>
                   <p className='mb-4 text-white font-medium text-5xl'>
-                    <span>$1500</span>
+                    <span>$1599</span>
                     <span className='text-base font-medium text-gray-300'>
                       / month
                     </span>
                   </p>
                   <p className='mb-6 text-xs text-gray-300 font-light uppercase'>
-                    What's includes
+                    Features
                   </p>
                   <ul className='mb-10'>
                     <li className='flex items-center mb-4'>
@@ -495,7 +543,7 @@ export default function Index() {
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>Core engagement survey</p>
+                      <p className='text-white'>1 Senior Developer + 1 Mid level Developer</p>
                     </li>
                     <li className='flex items-center mb-4'>
                       <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
@@ -504,7 +552,7 @@ export default function Index() {
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>Topic-based assessments</p>
+                      <p className='text-white'>PHP Laravel and WP Elementor Development</p>
                     </li>
                     <li className='flex items-center mb-4'>
                       <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
@@ -513,19 +561,48 @@ export default function Index() {
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>
-                        Custom topic-based assessments
+                      <p className='text-white'>React/Next - Vue/Nuxt Development</p>
+                    </li>
+                    <li className='flex items-center mb-4'>
+                      <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
+                        <img
+                          src='nightsable-assets/images/modals/check.svg'
+                          alt=''
+                        />
+                      </div>
+                      <p className='text-white'>Average 48 hour delivery for a new FEATURE</p>
+                    </li>
+                    <li className='flex items-center mb-4'>
+                      <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
+                        <img
+                          src='nightsable-assets/images/modals/check.svg'
+                          alt=''
+                        />
+                      </div>
+                      <p className='text-white mb-4'>
+                        Average 24 hour delivery for a BUG FIX
                       </p>
                     </li>
                     <li className='flex items-center'>
                       <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
-                        <img
+                      <img
                           src='nightsable-assets/images/modals/check.svg'
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>
-                        Filterable heatmap &amp; analytics
+                      <p className='text-white mb-4'>
+                        A week, for website built on top of WP Elementor
+                      </p>
+                    </li>
+                    <li className='flex items-center'>
+                      <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
+                      <img
+                          src='nightsable-assets/images/modals/check.svg'
+                          alt=''
+                        />
+                      </div>
+                      <p className='text-white mb-4'>
+                        Average 1 week for 3rd Party API Integrations
                       </p>
                     </li>
                   </ul>
@@ -544,19 +621,18 @@ export default function Index() {
               </div>
               <div className='w-full lg:w-1/3 p-4'>
                 <div className='relative px-8 pt-12 pb-12 h-full bg-gradient-radial-dark border-2 border-gray-900 border-opacity-30 overflow-hidden rounded-5xl'>
-                  <p className='mb-2 text-lg text-white font-light'>Premium</p>
+                  <p className='mb-2 text-lg text-white font-light'>VIP</p>
                   <p className='mb-6 text-gray-300'>
-                    During this phase the design is developed to meet the
-                    required technical standards to
+                    Hire the entire team. Pause or cancel anytime.
                   </p>
                   <p className='mb-4 text-white font-medium text-5xl'>
-                    <span>$2000</span>
+                    <span>$4599</span>
                     <span className='text-base font-medium text-gray-300'>
                       / month
                     </span>
                   </p>
                   <p className='mb-6 text-xs text-gray-300 font-light uppercase'>
-                    What's includes
+                    Features
                   </p>
                   <ul className='mb-10'>
                     <li className='flex items-center mb-4'>
@@ -566,7 +642,9 @@ export default function Index() {
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>Core engagement survey</p>
+                      <p className='text-white'>
+                        For large projects that are built from the ground up
+                      </p>
                     </li>
                     <li className='flex items-center mb-4'>
                       <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
@@ -575,7 +653,7 @@ export default function Index() {
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>Topic-based assessments</p>
+                      <p className='text-white'>1 Project Manager + 1 Senior Developer</p>
                     </li>
                     <li className='flex items-center mb-4'>
                       <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
@@ -584,20 +662,25 @@ export default function Index() {
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>
-                        Custom topic-based assessments
-                      </p>
+                      <p className='text-white'>Upto 4 Mid Level Developers</p>
                     </li>
-                    <li className='flex items-center'>
+                    <li className='flex items-center mb-4'>
                       <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
                         <img
                           src='nightsable-assets/images/modals/check.svg'
                           alt=''
                         />
                       </div>
-                      <p className='text-white'>
-                        Filterable heatmap &amp; analytics
-                      </p>
+                      <p className='text-white'>Upto 3 QA Engineers</p>
+                    </li>
+                    <li className='flex items-center mb-4'>
+                      <div className='flex items-center justify-center w-5 h-5 mr-4 border border-green-400 rounded-full'>
+                        <img
+                          src='nightsable-assets/images/modals/check.svg'
+                          alt=''
+                        />
+                      </div>
+                      <p className='text-white'>1 Web Designer</p>
                     </li>
                   </ul>
                   <a
@@ -636,8 +719,7 @@ export default function Index() {
                     <div className='flex flex-wrap items-center -m-2'>
                       <div className='flex-1 p-2'>
                         <h3 className='text-2xl text-white tracking-2xl'>
-                          What are the limits for money transfers from the
-                          United States?
+                          How do I start?
                         </h3>
                       </div>
                       <div className='w-auto p-2'>
@@ -669,7 +751,7 @@ export default function Index() {
                     <div className='flex flex-wrap items-center -m-2'>
                       <div className='flex-1 p-2'>
                         <h3 className='text-2xl text-white tracking-2xl'>
-                          Is it safe to send money with Revolut?
+                          Shouldn't I just hire employees?
                         </h3>
                       </div>
                       <div className='w-auto p-2'>
@@ -701,8 +783,7 @@ export default function Index() {
                     <div className='flex flex-wrap items-center -m-2'>
                       <div className='flex-1 p-2'>
                         <h3 className='text-2xl text-white tracking-2xl'>
-                          How can I make an international transfer from the
-                          United States?
+                          How do we communicate?
                         </h3>
                       </div>
                       <div className='w-auto p-2'>
@@ -734,8 +815,7 @@ export default function Index() {
                     <div className='flex flex-wrap items-center -m-2'>
                       <div className='flex-1 p-2'>
                         <h3 className='text-2xl text-white tracking-2xl'>
-                          How long does it take to send money abroad from the
-                          United States?
+                          Are there any refunds if I don't like the service?
                         </h3>
                       </div>
                       <div className='w-auto p-2'>
@@ -767,7 +847,7 @@ export default function Index() {
                     <div className='flex flex-wrap items-center -m-2'>
                       <div className='flex-1 p-2'>
                         <h3 className='text-2xl text-white tracking-2xl'>
-                          Where can I transfer money to from the United States?
+                          What if I only have a single request?
                         </h3>
                       </div>
                       <div className='w-auto p-2'>
@@ -795,7 +875,7 @@ export default function Index() {
             </div>
           </div>
         </section>
-        <section className='py-24 overflow-hidden'>
+        <section className='py-24 overflow-hidden' id='blog'>
           <div className='container px-4 mx-auto'>
             <div className='mb-20 md:max-w-2xl text-center mx-auto'>
               <span className='inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter'>
@@ -897,7 +977,7 @@ export default function Index() {
                 </div>
                 <a className='group block' href='#'>
                   <h3 className='mb-4 text-3xl text-white tracking-3xl hover:underline'>
-                    Philippine Startups
+                    The state of freelancing in The Philippines in 2024
                   </h3>
                 </a>
                 <p className='mb-6 text-white text-opacity-60'>
@@ -955,181 +1035,7 @@ export default function Index() {
                 </div>
                 <a className='group block' href='#'>
                   <h3 className='mb-4 text-3xl text-white tracking-3xl hover:underline'>
-                    Philippine Startups
-                  </h3>
-                </a>
-                <p className='mb-6 text-white text-opacity-60'>
-                  Nightsable is a strategic branding agency focused on brand
-                  creation
-                </p>
-                <div className='flex flex-wrap -m-1.5'>
-                  <div className='w-auto p-1.5'>
-                    <div className='py-3.5 px-6 text-sm text-white hover:text-black font-medium tracking-tighter bg-blueGray-900 bg-opacity-30 hover:bg-green-400 rounded-full transition duration 300'>
-                      Building our platform
-                    </div>
-                  </div>
-                  <div className='w-auto p-1.5'>
-                    <div className='py-3.5 px-6 text-sm text-white hover:text-black font-medium tracking-tighter bg-blueGray-900 bg-opacity-30 hover:bg-green-400 rounded-full transition duration 300'>
-                      On-Demand
-                    </div>
-                  </div>
-                  <div className='w-auto p-1.5'>
-                    <div className='py-3.5 px-6 text-sm text-white hover:text-black font-medium tracking-tighter bg-blueGray-900 bg-opacity-30 hover:bg-green-400 rounded-full transition duration 300'>
-                      Marketing
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='w-full md:w-1/2 lg:w-1/3 p-4 md:mb-20 lg:mb-0'>
-                <div className='mb-8 overflow-hidden rounded-3xl'>
-                  <img
-                    className='w-full transform hover:scale-125 transition duration-1000'
-                    src='nightsable-assets/images/blog/cash4.png'
-                    alt=''
-                  />
-                </div>
-                <div className='flex flex-wrap items-center -m-2 mb-4'>
-                  <div className='w-auto p-2'>
-                    <span className='text-sm text-white font-medium tracking-tighter'>
-                      Blog Post
-                    </span>
-                  </div>
-                  <div className='w-auto p-2'>
-                    <svg
-                      width={3}
-                      height={3}
-                      viewBox='0 0 3 3'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path d='M2.492 2.5H0.574V0.33H2.492V2.5Z' fill='white' />
-                    </svg>
-                  </div>
-                  <div className='w-auto p-2'>
-                    <span className='text-sm text-white font-medium tracking-tighter'>
-                      9 min read
-                    </span>
-                  </div>
-                </div>
-                <a className='group block' href='#'>
-                  <h3 className='mb-4 text-3xl text-white tracking-3xl hover:underline'>
-                    Philippine Startups
-                  </h3>
-                </a>
-                <p className='mb-6 text-white text-opacity-60'>
-                  Nightsable is a strategic branding agency focused on brand
-                  creation
-                </p>
-                <div className='flex flex-wrap -m-1.5'>
-                  <div className='w-auto p-1.5'>
-                    <div className='py-3.5 px-6 text-sm text-white hover:text-black font-medium tracking-tighter bg-blueGray-900 bg-opacity-30 hover:bg-green-400 rounded-full transition duration 300'>
-                      Building our platform
-                    </div>
-                  </div>
-                  <div className='w-auto p-1.5'>
-                    <div className='py-3.5 px-6 text-sm text-white hover:text-black font-medium tracking-tighter bg-blueGray-900 bg-opacity-30 hover:bg-green-400 rounded-full transition duration 300'>
-                      On-Demand
-                    </div>
-                  </div>
-                  <div className='w-auto p-1.5'>
-                    <div className='py-3.5 px-6 text-sm text-white hover:text-black font-medium tracking-tighter bg-blueGray-900 bg-opacity-30 hover:bg-green-400 rounded-full transition duration 300'>
-                      Marketing
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='w-full md:w-1/2 lg:w-1/3 p-4'>
-                <div className='mb-8 overflow-hidden rounded-3xl'>
-                  <img
-                    className='w-full transform hover:scale-125 transition duration-1000'
-                    src='nightsable-assets/images/blog/hand4.png'
-                    alt=''
-                  />
-                </div>
-                <div className='flex flex-wrap items-center -m-2 mb-4'>
-                  <div className='w-auto p-2'>
-                    <span className='text-sm text-white font-medium tracking-tighter'>
-                      Blog Post
-                    </span>
-                  </div>
-                  <div className='w-auto p-2'>
-                    <svg
-                      width={3}
-                      height={3}
-                      viewBox='0 0 3 3'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path d='M2.492 2.5H0.574V0.33H2.492V2.5Z' fill='white' />
-                    </svg>
-                  </div>
-                  <div className='w-auto p-2'>
-                    <span className='text-sm text-white font-medium tracking-tighter'>
-                      9 min read
-                    </span>
-                  </div>
-                </div>
-                <a className='group block' href='#'>
-                  <h3 className='mb-4 text-3xl text-white tracking-3xl hover:underline'>
-                    Philippine Startups
-                  </h3>
-                </a>
-                <p className='mb-6 text-white text-opacity-60'>
-                  Nightsable is a strategic branding agency focused on brand
-                  creation
-                </p>
-                <div className='flex flex-wrap -m-1.5'>
-                  <div className='w-auto p-1.5'>
-                    <div className='py-3.5 px-6 text-sm text-white hover:text-black font-medium tracking-tighter bg-blueGray-900 bg-opacity-30 hover:bg-green-400 rounded-full transition duration 300'>
-                      Building our platform
-                    </div>
-                  </div>
-                  <div className='w-auto p-1.5'>
-                    <div className='py-3.5 px-6 text-sm text-white hover:text-black font-medium tracking-tighter bg-blueGray-900 bg-opacity-30 hover:bg-green-400 rounded-full transition duration 300'>
-                      On-Demand
-                    </div>
-                  </div>
-                  <div className='w-auto p-1.5'>
-                    <div className='py-3.5 px-6 text-sm text-white hover:text-black font-medium tracking-tighter bg-blueGray-900 bg-opacity-30 hover:bg-green-400 rounded-full transition duration 300'>
-                      Marketing
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='w-full md:w-1/2 lg:w-1/3 p-4'>
-                <div className='mb-8 overflow-hidden rounded-3xl'>
-                  <img
-                    className='w-full transform hover:scale-125 transition duration-1000'
-                    src='nightsable-assets/images/blog/skyscraper4.png'
-                    alt=''
-                  />
-                </div>
-                <div className='flex flex-wrap items-center -m-2 mb-4'>
-                  <div className='w-auto p-2'>
-                    <span className='text-sm text-white font-medium tracking-tighter'>
-                      Blog Post
-                    </span>
-                  </div>
-                  <div className='w-auto p-2'>
-                    <svg
-                      width={3}
-                      height={3}
-                      viewBox='0 0 3 3'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path d='M2.492 2.5H0.574V0.33H2.492V2.5Z' fill='white' />
-                    </svg>
-                  </div>
-                  <div className='w-auto p-2'>
-                    <span className='text-sm text-white font-medium tracking-tighter'>
-                      9 min read
-                    </span>
-                  </div>
-                </div>
-                <a className='group block' href='#'>
-                  <h3 className='mb-4 text-3xl text-white tracking-3xl hover:underline'>
-                    Philippine Startups
+                    PH First Unicorns
                   </h3>
                 </a>
                 <p className='mb-6 text-white text-opacity-60'>
@@ -1157,7 +1063,7 @@ export default function Index() {
             </div>
           </div>
         </section>
-        <section className='py-24 overflow-hidden'>
+        <section className='py-24 overflow-hidden' id='subscribe'>
           <div className='container px-4 mx-auto'>
             <div className='py-14 bg-gray-900 bg-opacity-30 rounded-6xl'>
               <div className='md:max-w-2xl mx-auto text-center px-4'>
@@ -1165,12 +1071,10 @@ export default function Index() {
                   Revolutionizing Development
                 </span>
                 <h2 className='mb-6 text-5xl text-white tracking-5xl'>
-                  Industry insights you wan&amp;grave;t delete. Delivered to
-                  your inbox weekly
+                  Empowering the Philippines through Tech
                 </h2>
                 <p className='mb-12 text-gray-300 max-w-lg mx-auto'>
-                  Join 10,000 founders, get early access to Nightsable features,
-                  and learn how to squeeze every drop of revenue
+                Join Our Community Stay ahead with the latest on Filipino startups and new tech products. Connect, engage, and grow with us!
                 </p>
               </div>
               <div className='px-4'>
@@ -1196,7 +1100,7 @@ export default function Index() {
               <div className='w-full md:w-1/2 p-8'>
                 <div className='md:max-w-md'>
                   <h3 className='mb-10 text-3xl text-white'>
-                    Subscribe to get tips and tactics to grow the way you want.
+                    Make your idea to reality with a fixed price!
                   </h3>
                   {/* <div className='relative border border-gray-900 focus-within:border-white overflow-hidden rounded-3xl'>
                     <input
