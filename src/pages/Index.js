@@ -1225,7 +1225,7 @@ export default function Index() {
               <div className='w-auto p-4'>
                 <ul className='flex flex-wrap items-center -m-2 sm:-m-5'>
                   <li className='p-2 sm:p-5'>
-                    <a className='inline-block' href='#'>
+                    <a className='inline-block' href='https://twitter.com/0reancirl'>
                       <img
                         src='nightsable-assets/images/footers/twitter-white.svg'
                         alt=''
@@ -1233,7 +1233,7 @@ export default function Index() {
                     </a>
                   </li>
                   <li className='p-2 sm:p-5'>
-                    <a className='inline-block' href='#'>
+                    <a className='inline-block' href='https://www.linkedin.com/in/reancirl-balaba/'>
                       <img
                         src='nightsable-assets/images/footers/linkedin-white.svg'
                         alt=''
@@ -1241,7 +1241,7 @@ export default function Index() {
                     </a>
                   </li>
                   <li className='p-2 sm:p-5'>
-                    <a className='inline-block' href='#'>
+                    <a className='inline-block' href='https://www.tiktok.com/@rey.bal'>
                       <img
                         src='nightsable-assets/images/footers/tiktok-wh.svg'
                         alt=''
@@ -1249,7 +1249,7 @@ export default function Index() {
                     </a>
                   </li>
                   <li className='p-2 sm:p-5'>
-                    <a className='inline-block' href='#'>
+                    <a className='inline-block' href='https://www.facebook.com/reancirl'>
                       <img
                         src='nightsable-assets/images/footers/fb-white.svg'
                         alt=''
@@ -1257,7 +1257,7 @@ export default function Index() {
                     </a>
                   </li>
                   <li className='p-2 sm:p-5'>
-                    <a className='inline-block' href='#'>
+                    <a className='inline-block' href='https://www.instagram.com/reancirl.balaba'>
                       <img
                         src='nightsable-assets/images/footers/instagram-white.svg'
                         alt=''
