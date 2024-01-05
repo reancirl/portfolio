@@ -5,7 +5,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import MailchimpForm from '../components/MailChimpForm';
 
 const meta = {
-  title: 'Reancirl Balaba Dev Services',
+  title: 'Reancirl Balaba | Dev Services',
   meta: [],
   link: [],
   style: [],
