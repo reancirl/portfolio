@@ -131,7 +131,8 @@ export default function Index() {
       <HelmetProvider>
         <Helmet {...meta}></Helmet>
       </HelmetProvider>
-        {apiResponseContent && (
+        {
+          apiResponseContent ? (
           <div style={containerStyle}>
             <div style={{ maxWidth: '600px', margin: '20px auto', textAlign: 'left' }}>
               <ReactMarkdown>{apiResponseContent}</ReactMarkdown>
@@ -141,44 +142,49 @@ export default function Index() {
                 Clear Result
             </button>
           </div>
-        )}
-      {isLoading ? (
-        <div style={containerStyle}>
-          Please wait ...
-          <br />
-          Currently Talking to AI 🤖🤔💪
-        </div>
-      ) : (
-        <div style={containerStyle}>
-          <input type="file" ref={fileInputRef} onChange={handleImageUpload} style={{ display: 'none' }} />
-          {isMobile && <input type="file" ref={fileInputCaptureRef} onChange={handleImageUpload} style={{ display: 'none' }} capture="environment" />}
-          <button onClick={triggerFileInputUpload} className='inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300'>
-            Upload Image
-          </button>
-          {isMobile && (
-            <button onClick={triggerFileInputCapture} className='inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300'>
-              Capture Image
-            </button>
-          )}
-          {imageUrl ? (
-            <img src={imageUrl} alt="Uploaded" style={{ maxWidth: '100%', maxHeight: '500px', margin: '20px auto' }} />
-          ) : (
-            <div style={imageBoxStyle}>
-              Empty
+        ) : (
+            <div>
+              {isLoading ? (
+                <div style={containerStyle}>
+                  Please wait ...
+                  <br />
+                  Currently Talking to AI 🤖🤔💪
+                </div>
+              ) : (
+                <div style={containerStyle}>
+                  <input type="file" ref={fileInputRef} onChange={handleImageUpload} style={{ display: 'none' }} />
+                  {isMobile && <input type="file" ref={fileInputCaptureRef} onChange={handleImageUpload} style={{ display: 'none' }} capture="environment" />}
+                  <button onClick={triggerFileInputUpload} className='inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300'>
+                    Upload Image
+                  </button>
+                  {isMobile && (
+                    <button onClick={triggerFileInputCapture} className='inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300'>
+                      Capture Image
+                    </button>
+                  )}
+                  {imageUrl ? (
+                    <img src={imageUrl} alt="Uploaded" style={{ maxWidth: '100%', maxHeight: '500px', margin: '20px auto' }} />
+                  ) : (
+                    <div style={imageBoxStyle}>
+                      Empty
+                    </div>
+                  )}
+                  <div>
+                    <button className='inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300' 
+                            onClick={handleScan}>
+                        Scan Image
+                    </button>
+                    <button className='inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300' 
+                            onClick={handleClearImage}>
+                        Clear Image
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
-          )}
-          <div>
-            <button className='inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300' 
-                    onClick={handleScan}>
-                Scan Image
-            </button>
-            <button className='inline-block px-8 py-4 text-center text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300' 
-                    onClick={handleClearImage}>
-                Clear Image
-            </button>
-          </div>
-        </div>
-      )}
+          )
+        }
+      
       
     </React.Fragment>
   );
